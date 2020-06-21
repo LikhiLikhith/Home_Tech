@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile"/>
+
+
+    <item
+        android:id="@+id/menuRoom"
+        android:icon="@drawable/ic_room"
+        android:title="Operate" />
+
+    <item
+        android:id="@+id/menuNotification"
+        android:icon="@drawable/ic_notification"
+        android:title="Notification"/>
+
+    <item
+        android:id="@+id/menuChangePass"
+        android:icon="@drawable/ic_changepass"
+        android:title="@string/change_password"/>
+
+
+    <item
+        android:id="@+id/menuLogout"
+        android:icon="@drawable/ic_logou"
+        android:title="@string/logout"/>
+
+
+    <item android:title="Others">
+
+        <menu>
+            <item
+                android:id="@+id/Support"
+                android:icon="@drawable/ic_livehelp"
+                android:title="@string/support"/>
+
+            <item
+                android:id="@+id/Aboutus"
+                android:icon="@drawable/ic_about"
+                android:title="@string/about_us"/>
+
+
+        </menu>
+
+    </item>
+
+
+</menu>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    tools:context=".OperateFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/hall"
+                android:id="@+id/hall"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hall"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/hall"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/bedo"
+                android:id="@+id/bedo"
+                android:layout_alignParentRight="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bed Room 1"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/bedo"
+                android:layout_alignParentRight="true" />
+
+         </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/bed"
+                android:id="@+id/bedt"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bed Room 2"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/bedt"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/kitchen"
+                android:id="@+id/kitch"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kitchen"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/kitch"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/washroom"
+                android:id="@+id/washr"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wash Room"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/washr"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

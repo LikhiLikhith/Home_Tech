@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/background"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".login">
+
+    <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:srcCompat="@drawable/ic_profile"
+    tools:ignore="VectorDrawableCompat" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User ID / E-mail"
+            android:id="@+id/usid"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@color/background"
+            android:textSize="17sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/lgpass"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:background="@color/background"
+            android:textSize="17sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Type"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textSize="15dp"
+            android:id="@+id/User"
+            android:checked="true"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick,RtlCompat" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/Admin"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NB"
+            android:textSize="15dp"
+            android:id="@+id/NrB"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="RtlCompat" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB"
+            android:textSize="15dp"
+            android:id="@+id/AdB"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="RtlCompat"
+            android:layout_marginStart="5dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textSize="18sp"
+        android:id="@+id/login"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded" />
+
+</LinearLayout>

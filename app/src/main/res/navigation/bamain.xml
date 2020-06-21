@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bamain"
+    tools:ignore="UnusedNavigation"
+    app:startDestination="@id/menuRoomBA">
+
+    <fragment
+        android:id="@+id/UserstatusBA"
+        android:name="com.example.smartdesign.BAUserStatusFragment"
+        android:label="fragment_b_a_user_status"
+        tools:layout="@layout/fragment_b_a_user_status" />
+    <fragment
+        android:id="@+id/UserAddBA"
+        android:name="com.example.smartdesign.AddBAFragment"
+        android:label="fragment_add_b_a"
+        tools:layout="@layout/fragment_add_b_a" />
+    <fragment
+        android:id="@+id/menuProfileBA"
+        android:name="com.example.smartdesign.ProfileBAAdmin"
+        android:label="fragment_profile_b_a_admin"
+        tools:layout="@layout/fragment_profile_b_a_admin" />
+    <fragment
+        android:id="@+id/menuRoomBA"
+        android:name="com.example.smartdesign.RoomControlBA"
+        android:label="fragment_room_control_b_a"
+        tools:layout="@layout/fragment_room_control_b_a" />
+    <fragment
+        android:id="@+id/menuLogout"
+        android:name="com.example.smartdesign.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/Support"
+        android:name="com.example.smartdesign.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/Aboutus"
+        android:name="com.example.smartdesign.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+</navigation>

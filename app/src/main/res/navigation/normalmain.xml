@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/normalmain"
+    app:startDestination="@id/menuRoom">
+
+    <fragment
+        android:id="@+id/menuProfile"
+        android:name="com.example.smartdesign.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/menuNotification"
+        android:name="com.example.smartdesign.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/menuRoom"
+        android:name="com.example.smartdesign.OperateFragment"
+        android:label="Oper"
+        tools:layout="@layout/fragment_operate" />
+    <fragment
+        android:id="@+id/menuChangePass"
+        android:name="com.example.smartdesign.ChangePassFragment"
+        android:label="Change_pass"
+        tools:layout="@layout/fragment_change_pass" />
+    <fragment
+        android:id="@+id/Support"
+        android:name="com.example.smartdesign.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/Aboutus"
+        android:name="com.example.smartdesign.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/menuLogout"
+        android:name="com.example.smartdesign.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
+
+</navigation>

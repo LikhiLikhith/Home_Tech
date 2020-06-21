@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".welcome">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/ic_room"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select your Operation type"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Bluetooth Module"
+        android:textSize="15sp"
+        android:id="@+id/bluetoothmod"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="WiFi Module"
+        android:textSize="15sp"
+        android:id="@+id/wifimod"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded" />
+
+
+</LinearLayout>
